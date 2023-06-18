@@ -1,0 +1,123 @@
+.special-menu {
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    margin-left: 3rem;
+  }
+  
+  .special-menu__title {
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .special-menu__menu {
+    width: 100%;
+    margin: 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+  }
+  
+  .special-menu__menu-heading {
+    font-family: var(--font-base);
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 58.5px;
+    letter-spacing: 0.04em;
+    color: var(--color-white);
+  }
+  
+  .special-menu__menu-wine,
+  .special-menu__menu-cocktails {
+    flex: 1;
+    width: 100%;
+    flex-direction: column;
+  }
+  
+  .special-menu__menu-img {
+    margin: 0 2rem;
+    position: relative;
+  }
+  
+  .special-menu__menu-img img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .special-menu__menu-items {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 0;
+    width: 100%;
+  }
+
+  .special-menu__menu-img .hover-area {
+    position: absolute;
+    left: none; /* Adjust the position as desired */
+    top: none; /* Adjust the position as desired */
+    width: 5%; /* Adjust the width as desired */
+    height: auto;
+    padding-top: 5%; /* Adjust the padding-top as desired */
+    background-color: rgba(0, 0, 0, 0.527);
+    border-radius: 50%; /* Make it a circle */
+  }
+
+  .special-menu__menu-img .hover-area .dropdown {
+    position: absolute;
+     /* positions relative to .hover-area */
+    left: 0px;
+    top: 100%;
+    width: 200px; /* Adjust the width as per your requirement */
+    display: none;
+  }
+
+  .special-menu__menu-img .hover-area:hover .dropdown {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 300px; /* Adjust the width as desired */
+    background-color: black;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add a box shadow for depth */
+    padding: 1rem; /* Add padding for content spacing */
+    border-radius: 4px; /* Add border radius for rounded corners */
+    z-index: 10;
+  }
+  
+  @media screen and (min-width: 2000px) {
+    .special-menu__menu-img {
+      width: 650px;
+    }
+  
+    .special-menu__menu-img img {
+      height: 920px;
+    }
+  }
+  
+  @media screen and (max-width: 1150px) {
+    .special-menu__menu {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+  
+    .special-menu__menu-img {
+      margin: 3rem 0;
+    }
+  }
+  
+  @media screen and (max-width: 650px) {
+    .special-menu__menu-img {
+      width: 100%;
+    }
+  
+    .special-menu__menu-heading {
+      font-size: 35px;
+      line-height: 48.5px;
+    }
+  }
+  

@@ -1,0 +1,58 @@
+.find_us_section {
+    padding: 2rem;
+    background-color: #f9f9f9;
+  }
+  
+  .find_us_title {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .find_us_info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+  }
+  
+  .find_us_address {
+    margin-right: 2rem;
+  }
+  
+  .find_us_address p {
+    margin-bottom: 0.5rem;
+  }
+  
+  .find_us_contact p {
+    margin-bottom: 0.5rem;
+  }
+  
+  .find_us_social {
+    display: flex;
+  }
+  
+  .find_us_social_link {
+    display: inline-block;
+    margin-right: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #333333;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  .find_us_social_link:hover {
+    background-color: #222222;
+  }
+  
+  .app__wrapper_map {
+    text-align: center;
+    margin-top: 4rem;
+  }
+  
+  .app__wrapper_map img {
+    width: 100%;
+    max-width: 600px;
+    margin: 2rem auto;
+  }

@@ -1,0 +1,34 @@
+.online_order_section {
+    align-items: center;
+    padding: 2rem;
+    background-color: #f9f9f9;
+  }
+  
+  .online_order_title {
+    align-items: center;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .online_order_links {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .online_order_link {
+    display: inline-block;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #333333;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  .online_order_link:hover {
+    background-color: #222222;
+  }

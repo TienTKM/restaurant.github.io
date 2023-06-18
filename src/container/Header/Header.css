@@ -1,0 +1,74 @@
+.app_header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  z-index: -1;
+  }
+  
+  .app_header_info {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+
+    text-align: right;
+  }
+  
+  .header_image {
+    position: relative;
+    height: 50%; /* Adjust the height as needed */
+    width: 50%;
+    z-index: -1;
+    margin: 2rem 4rem;
+  }
+
+  .header_image img {
+    position:relative;
+    height: 100%;
+    width: 100%;
+    object-fit:cover;
+  }
+
+  .custom_button {
+    
+    padding: 0.75rem 1.5rem; /* Adjust the padding to control the button size */
+    font-size: 1.2rem; /* Adjust the font size of the button */
+    background-color: rgba(255, 255, 255, 0.849);
+    color: black;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .custom_button:hover {
+    background-color: #f0f0f0; /* Adjust the hover background color */
+  }
+  
+  @media screen and (max-width: 650px) {
+    .app_header-title {
+      font-size: 2rem; /* Adjust the font size for smaller screens */
+    }
+  
+    .app_header-subtitle {
+      font-size: 1.2rem; /* Adjust the font size for smaller screens */
+    }
+  
+    .header_image {
+      position: relative;
+      height: 100%; /* Adjust the height as needed */
+      width: 100%;
+      z-index: -1;
+    }
+  
+    .header_image img {
+      position:relative;
+      height: 100%;
+      width: 100%;
+      object-fit:cover;
+    }
+  }
