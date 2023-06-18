@@ -1,6 +1,5 @@
 import React from 'react';
 
-import { SubHeading } from '../../components';
 import { images } from '../../constants';
 
 const FindUs = () => (
@@ -22,9 +21,14 @@ const FindUs = () => (
           <img src={images.findus} alt="findus_img" />
         </div>
       </div>
-      <div className="app__wrapper_map">
-        <img src={images.map} alt="map_img" style={{ width: '100%', margin: '2rem auto' }} />
-      </div>
+      <div id="canvas-for-googlemap" style={{ height: '300px', width: '100%', maxWidth: '100%' }}>
+            <iframe
+              style={{ height: '100%', width: '100%'}}
+              frameBorder="0"
+              src="https://www.google.com/maps/embed/v1/place?q=Fleur+de+Riz,+46+Rue+d'Antrain,+35000+Rennes,+France&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
+              allowFullScreen
+            ></iframe>
+          </div>
       
   </div>
 );

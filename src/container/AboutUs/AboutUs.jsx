@@ -17,7 +17,6 @@ const AboutUs = () => (
 
       <div className="app__aboutus-content_about">
         <h1 className="p__beautiful" style={{ fontSize:'65px', textAlign:'left'}}>Bottom Text</h1>
-        <img src={images.spoon} alt="about_spoon" className="spoon__img" />
         <p className="p__opensans">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis pharetra adipiscing ultrices vulputate posuere tristique. In sed odio nec aliquet eu proin mauris et.</p>
         <button type="button" className="custom__button" style={{fontFamily:'Beautiful Day, sans-serif', fontSize:'25px'}}>Know More</button>
       </div>

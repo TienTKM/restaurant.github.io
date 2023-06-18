@@ -59,34 +59,59 @@
     position: absolute;
     left: none; /* Adjust the position as desired */
     top: none; /* Adjust the position as desired */
-    width: 5%; /* Adjust the width as desired */
+    width: 3%; /* Adjust the width as desired */
     height: auto;
-    padding-top: 5%; /* Adjust the padding-top as desired */
+    padding-top: 3%; /* Adjust the padding-top as desired */
     background-color: rgba(0, 0, 0, 0.527);
     border-radius: 50%; /* Make it a circle */
   }
-
+  
+  .special-menu__menu-img .hover-area::before,
+  .special-menu__menu-img .hover-area::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    height: 2px;
+    background-color: #fff; /* Adjust the color as desired */
+  }
+  
+  .special-menu__menu-img .hover-area::before {
+    transform: translate(-50%, -50%) rotate(90deg);
+  }
+  
+  .special-menu__menu-img .hover-area::after {
+    transform: translate(-50%, -50%) rotate(180deg);
+  }
+  
   .special-menu__menu-img .hover-area .dropdown {
     position: absolute;
-     /* positions relative to .hover-area */
-    left: 0px;
+    left: 0;
     top: 100%;
-    width: 200px; /* Adjust the width as per your requirement */
-    display: none;
+    width: auto; /* Change the width to auto */
+    background-color: black;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    border-radius: 4px;
+    z-index: 10;
+    white-space: normal; /* Add this property to wrap the text */
   }
-
+  
+  
   .special-menu__menu-img .hover-area:hover .dropdown {
     display: block;
     position: absolute;
     left: 0;
     top: 100%;
-    width: 300px; /* Adjust the width as desired */
+    width: 80%; /* Adjust the width as desired */
     background-color: black;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add a box shadow for depth */
     padding: 1rem; /* Add padding for content spacing */
     border-radius: 4px; /* Add border radius for rounded corners */
     z-index: 10;
-  }
+  }  
   
   @media screen and (min-width: 2000px) {
     .special-menu__menu-img {
