@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/restaurant.github.io/static/css/main.c628b712.css",
-    "main.js": "/restaurant.github.io/static/js/main.c93d0e8c.js",
+    "main.css": "/restaurant.github.io/static/css/main.01b7581b.css",
+    "main.js": "/restaurant.github.io/static/js/main.5fd347ac.js",
     "static/media/meal.mp4": "/restaurant.github.io/static/media/meal.a1b6c6dc67dfa2f99343.mp4",
     "static/media/vnfood2.png": "/restaurant.github.io/static/media/vnfood2.30bf7176f69b3cf54354.png",
     "static/media/bg.png": "/restaurant.github.io/static/media/bg.3d421b1b5682e1b67deb.png",
@@ -42,11 +42,11 @@
     "static/media/slick.woff": "/restaurant.github.io/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/restaurant.github.io/index.html",
     "static/media/spoon.svg": "/restaurant.github.io/static/media/spoon.d079f43fbcf509908d3865293080795a.svg",
-    "main.c628b712.css.map": "/restaurant.github.io/static/css/main.c628b712.css.map",
-    "main.c93d0e8c.js.map": "/restaurant.github.io/static/js/main.c93d0e8c.js.map"
+    "main.01b7581b.css.map": "/restaurant.github.io/static/css/main.01b7581b.css.map",
+    "main.5fd347ac.js.map": "/restaurant.github.io/static/js/main.5fd347ac.js.map"
   },
   "entrypoints": [
-    "static/css/main.c628b712.css",
-    "static/js/main.c93d0e8c.js"
+    "static/css/main.01b7581b.css",
+    "static/js/main.5fd347ac.js"
   ]
 }
