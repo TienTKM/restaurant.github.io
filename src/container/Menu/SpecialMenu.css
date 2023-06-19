@@ -1,148 +1,150 @@
 .special-menu {
-    flex-direction: column;
-    color: white;
-    justify-content: center;
-    align-items: center;
-    text-align: left;
-    margin-left: 3rem;
-  }
-  
-  .special-menu__title {
-    margin-bottom: 2rem;
-    text-align: center;
-  }
-  
-  .special-menu__menu {
-    width: 100%;
-    margin: 2rem 0;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: row;
-  }
-  
-  .special-menu__menu-heading {
-    font-family: var(--font-base);
-    font-weight: 600;
-    font-size: 45px;
-    line-height: 58.5px;
-    letter-spacing: 0.04em;
-    color: var(--color-white);
-  }
-  
-  .special-menu__menu-wine,
-  .special-menu__menu-cocktails {
-    flex: 1;
-    width: 100%;
-    flex-direction: column;
-  }
-  
+  flex-direction: column;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  margin-left: 3rem;
+}
+
+.special-menu__title {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.special-menu__menu {
+  width: 100%;
+  margin: 2rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: row;
+}
+
+.special-menu__menu-heading {
+  font-family: var(--font-base);
+  font-weight: 600;
+  font-size: 45px;
+  line-height: 58.5px;
+  letter-spacing: 0.04em;
+  color: var(--color-white);
+}
+
+.special-menu__menu-wine,
+.special-menu__menu-cocktails {
+  flex: 1;
+  width: 100%;
+  flex-direction: column;
+}
+
+.special-menu__menu-img {
+  margin: 0 2rem;
+  position: relative;
+}
+
+.special-menu__menu-img img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.special-menu__menu-items {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 0;
+  width: 100%;
+}
+
+.special-menu__menu-img .hover-area {
+  position: absolute;
+  left: none; /* Adjust the position as desired */
+  top: none; /* Adjust the position as desired */
+  width: 3%; /* Adjust the width as desired */
+  height: auto;
+  padding-top: 3%; /* Adjust the padding-top as desired */
+  background-color: rgba(0, 0, 0, 0.527);
+  border-radius: 50%; /* Make it a circle */
+}
+
+.special-menu__menu-img .hover-area::before,
+.special-menu__menu-img .hover-area::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40%;
+  height: 2px;
+  background-color: #fff; /* Adjust the color as desired */
+}
+
+.special-menu__menu-img .hover-area::before {
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.special-menu__menu-img .hover-area::after {
+  transform: translate(-50%, -50%) rotate(180deg);
+}
+
+.special-menu__menu-img .hover-area .dropdown {
+  position: absolute;
+  /* positions relative to .hover-area */
+  left: 0px;
+  top: 100%;
+  width: 80%; /* Adjust the width as per your requirement */
+  display: none;
+  opacity: 0;
+}
+
+.special-menu__menu-img .hover-area:hover .dropdown {
+  display: block;
+  position: absolute;
+  left: 0;
+  background-color: black;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add a box shadow for depth */
+  z-index: 10;
+  width: auto; /* Adjust the width as desired */
+  max-width: 300px; /* Set a maximum width if needed */
+  height: auto;
+  opacity: 1;
+  transition: opacity 5s ease-in-out; /* Add a transition for smooth fade-in effect */
+}
+
+/* Animation for fade-in effect */
+.special-menu__menu-img .hover-area .dropdown {
+  transition-delay: 0.1s; /* Delay the transition to start after hover */
+}
+
+/* Media queries for responsive styles */
+@media screen and (min-width: 2000px) {
   .special-menu__menu-img {
-    margin: 0 2rem;
-    position: relative;
+    width: 650px;
   }
-  
+
   .special-menu__menu-img img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
+    height: 920px;
   }
-  
-  .special-menu__menu-items {
-    display: flex;
+}
+
+@media screen and (max-width: 1150px) {
+  .special-menu__menu {
     flex-direction: column;
-    margin: 2rem 0;
+    align-items: center;
     width: 100%;
   }
 
-  .special-menu__menu-img .hover-area {
-    position: absolute;
-    left: none; /* Adjust the position as desired */
-    top: none; /* Adjust the position as desired */
-    width: 3%; /* Adjust the width as desired */
-    height: auto;
-    padding-top: 3%; /* Adjust the padding-top as desired */
-    background-color: rgba(0, 0, 0, 0.527);
-    border-radius: 50%; /* Make it a circle */
+  .special-menu__menu-img {
+    margin: 3rem 0;
   }
-  
-  .special-menu__menu-img .hover-area::before,
-  .special-menu__menu-img .hover-area::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 40%;
-    height: 2px;
-    background-color: #fff; /* Adjust the color as desired */
+}
+
+@media screen and (max-width: 650px) {
+  .special-menu__menu-img {
+    width: 100%;
   }
-  
-  .special-menu__menu-img .hover-area::before {
-    transform: translate(-50%, -50%) rotate(90deg);
+
+  .special-menu__menu-heading {
+    font-size: 35px;
+    line-height: 48.5px;
   }
-  
-  .special-menu__menu-img .hover-area::after {
-    transform: translate(-50%, -50%) rotate(180deg);
-  }
-  
-  .special-menu__menu-img .hover-area .dropdown {
-    position: absolute;
-    left: 0;
-    top: 100%;
-    width: auto; /* Change the width to auto */
-    background-color: black;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    padding: 1rem;
-    border-radius: 4px;
-    z-index: 10;
-    white-space: normal; /* Add this property to wrap the text */
-  }
-  
-  
-  .special-menu__menu-img .hover-area:hover .dropdown {
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 100%;
-    width: 80%; /* Adjust the width as desired */
-    background-color: black;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add a box shadow for depth */
-    padding: 1rem; /* Add padding for content spacing */
-    border-radius: 4px; /* Add border radius for rounded corners */
-    z-index: 10;
-  }  
-  
-  @media screen and (min-width: 2000px) {
-    .special-menu__menu-img {
-      width: 650px;
-    }
-  
-    .special-menu__menu-img img {
-      height: 920px;
-    }
-  }
-  
-  @media screen and (max-width: 1150px) {
-    .special-menu__menu {
-      flex-direction: column;
-      align-items: center;
-      width: 100%;
-    }
-  
-    .special-menu__menu-img {
-      margin: 3rem 0;
-    }
-  }
-  
-  @media screen and (max-width: 650px) {
-    .special-menu__menu-img {
-      width: 100%;
-    }
-  
-    .special-menu__menu-heading {
-      font-size: 35px;
-      line-height: 48.5px;
-    }
-  }
-  
+}
